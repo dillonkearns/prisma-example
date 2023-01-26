@@ -1,17 +1,21 @@
 {
-  "name": "deployment-example-netlify",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "netlify-cli": "12.2.9",
-    "prisma": "^4.7.1"
-  },
+  "name": "elm-pages-app",
   "scripts": {
-    "build": "prisma generate",
-    "dev": "netlify dev"
+    "postinstall": "elm-tooling install",
+    "start": "elm-pages dev",
+    "build": "prisma generate && elm-pages build"
+  },
+  "devDependencies": {
+    "elm-codegen": "^0.2.0",
+    "elm-optimize-level-2": "^0.3.5",
+    "elm-pages": "^3.0.0-beta.19",
+    "elm-review": "^2.8.5",
+    "elm-tooling": "^1.10.0",
+    "prisma": "^4.9.0",
+    "vite": "^3.1.8"
   },
   "dependencies": {
-    "@prisma/client": "^4.7.1"
+    "@netlify/functions": "^1.2.0",
+    "@prisma/client": "^4.9.0"
   }
 }
