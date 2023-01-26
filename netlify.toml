@@ -12,3 +12,5 @@
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["@prisma/client"]
+  included_files = ["**/*.mjs"]
+
