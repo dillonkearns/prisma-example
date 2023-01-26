@@ -11,4 +11,4 @@
 
 [functions]
   node_bundler = "esbuild"
-  external_node_modules = ["module-one", "@prisma/client"]
+  external_node_modules = ["@prisma/client"]
